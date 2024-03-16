@@ -1,18 +1,51 @@
 const header = document.getElementById('header');
+const navbarSupportedContent = document.getElementById('navbarSupportedContent');
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('navbar-scrolled');
-                header.classList.add('scrolled-up');
-                navbarSupportedContent.classList.add('scrolled-up')
+// Điều kiện đặt kích thước màn hình
 
-            } else {
-                header.classList.remove('navbar-scrolled');
-                header.classList.remove('scrolled-up');
-                navbarSupportedContent.classList.remove('scrolled-up')
+   // Đặt kích thước chiều rộng màn hình là 800px
 
-            }
-        });
+   console.log(window.innerWidth)
+
+  
+      window.addEventListener('scroll', () => {
+    if (window.scrollY > 50 && window.innerWidth > 1171 ) {
+      header.classList.add('navbar-scrolled');
+      header.classList.add('scrolled-up');
+      navbarSupportedContent.classList.add('scrolled-up');
+      
+    } else {
+      header.classList.remove('navbar-scrolled');
+      header.classList.remove('scrolled-up');
+      navbarSupportedContent.classList.remove('scrolled-up');
+    }
+  });
+  
+
+
+
+
+// Xử lý sự kiện cuộn
+
+
+
+
+
+// const header = document.getElementById('header');
+
+//         window.addEventListener('scroll', () => {
+//             if (window.scrollY > 50) {
+//                 header.classList.add('navbar-scrolled');
+//                 header.classList.add('scrolled-up');
+//                 navbarSupportedContent.classList.add('scrolled-up')
+
+//             } else {
+//                 header.classList.remove('navbar-scrolled');
+//                 header.classList.remove('scrolled-up');
+//                 navbarSupportedContent.classList.remove('scrolled-up')
+
+//             }
+//         });
 
 
 
