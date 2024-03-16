@@ -26,7 +26,6 @@ html{
 
 /* mainn */
 body {
-  display: grid;
   place-items: center;
 }
 
@@ -41,7 +40,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100%;
-    width:1920px;
+    width: 100%;
     position: relative;
    
     
@@ -96,7 +95,6 @@ body {
 #header {
   background-color: none;
   padding: 20px;
-  margin: 0 72px;
     display: flex;
     justify-content: space-around;
     height: 114px;
@@ -231,8 +229,7 @@ body {
 
 .search-model{
   width: 1170px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -247,7 +244,7 @@ body {
   box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
   padding: 40px 0px;
   justify-content: space-around;
-  margin:0px 20px;
+  margin:0px 20px 0px -20px;
 
 
 
@@ -282,13 +279,15 @@ body {
 }
 
 .container-search .col-md-3{
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .container-search .col-md-3.btn-search{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 0px;
+  margin-right: 0px;
 
 }
 .container-search .col-md-3 .btn-search-model{
@@ -301,6 +300,7 @@ body {
     border: 0;
     font-size: 16px;
     text-transform: capitalize;
+    
 }
 
 
@@ -310,7 +310,7 @@ body {
 
 #service{
     padding: 260px 0 87px;
-    max-width:1920px;
+   
    
 }
 
