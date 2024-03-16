@@ -1,0 +1,48 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: none; 
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    /* transition: opacity 0.2s ease-out, visibility 0.2s ease-out, transform 0.2s ease-out; */
+    /* animation: arrow-bounce 1s infinite; */
+  }
+  
+  .scroll-to-top:hover {
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+  } 
+  
+  .scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+  .scroll-to-top .fa-chevron-up {
+    animation: arrow-bounce 1s infinite;
+}
+    
+
+
+    
+    @keyframes arrow-bounce {
+        0% {
+          transform: translateY(2px);
+        }
+        50% {
+          transform: translateY(-3px);
+        }
+        100% {
+          transform: translateY(5px);
+        }
+      }
