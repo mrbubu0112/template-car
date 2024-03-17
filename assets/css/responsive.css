@@ -163,12 +163,6 @@
     
     }
 
-    #new-cars .container p {
-     
-    
-    
-    }
-
     #new-cars .row-2{
         width: 100%;
     }
@@ -547,6 +541,8 @@
    
         text-align: center;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #clients .single-service-item {
