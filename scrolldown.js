@@ -9,7 +9,7 @@ const navbarSupportedContent = document.getElementById('navbarSupportedContent')
 
   
       window.addEventListener('scroll', () => {
-    if (window.scrollY > 50 && window.innerWidth > 1171 ) {
+    if (window.scrollY > 50 && window.innerWidth > 992 ) {
       header.classList.add('navbar-scrolled');
       header.classList.add('scrolled-up');
       navbarSupportedContent.classList.add('scrolled-up');

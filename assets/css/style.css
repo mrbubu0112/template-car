@@ -672,10 +672,13 @@ body {
  
 
 }
+
+
 #clients .avatar-image{
   border-radius:50%;
   width: 100px;
-  transform: translate(100%, 0%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #clients .single-service-item:hover{
